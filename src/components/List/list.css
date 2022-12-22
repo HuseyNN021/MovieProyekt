@@ -1,0 +1,37 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 260px;
+    height: auto;
+}
+
+.list-button {
+    margin-top: 20px;
+    padding: 3px;
+}
+
+.list ul {
+    list-style: none;
+    color: white;
+}
+
+.list-input {
+    padding: 5px;
+}
+
+.blog-list {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    padding: 20px;
+    width: 260px;
+    height: auto;
+}
+.delete:hover{
+    display: flex;
+    align-items: center;
+    background-color: red;
+    padding: 3px;
+    border-radius: 3px;
+}
