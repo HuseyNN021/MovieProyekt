@@ -27,12 +27,12 @@ const List = ({ list, setList }) => {
     <div className='list'>
       <div className='blog-list'>
         <input ref={listInput} style={{ marginBottom: '5px' }} type="text" placeholder='Enter the list name' className='list-input' />
-        <ul>
+        <ul >
           {
-            list?.map(item => {
+            list?.map((item,key )=> {
               return (
                 <>
-                  <div className="list-ul" style={{ display: 'flex' }}>
+                  <div key={key} className="list-ul" style={{ display: 'flex' }}>
                     <li style={{ width: '166px', marginBottom: '10px' }}>{item}</li>
                     <button className='delete' style={{ height: '20px' }} onClick={() => { removeDatafromList(item) }}>X</button>
                   </div>
@@ -42,7 +42,7 @@ const List = ({ list, setList }) => {
           }
         </ul>
         {
-          value.length > 0 ? <Link to={'/list'}>go to list</Link> : <button onClick={goToList} className='list-button'>Save List</button>
+          value.length > 0 ? <Link to={'/list'} state={list}>go to list</Link> : <button onClick={goToList} className='list-button'>Save List</button>
         }
       </div>
     </div>

@@ -22,13 +22,13 @@ const Form = ({setList,list}) => {
     <div className='form-row'>
     
         <form onSubmit={handleSubmit}>
-          <label htmlFor="moviename">Search movie by title:
+          <label htmlFor="moviename"><p style={{color:"white"}}>Search movie by title:</p>
             <input type="text" id='moviename' name='movieName' required />
           </label>
           <button type='submit' className='search' >Search</button>
         </form>
       <div>
-       <Card movieData={data} setList={setList} list={list}/>
+       <Card movieData={data} setList={setList} list={list} />
       </div>
     </div>
   )

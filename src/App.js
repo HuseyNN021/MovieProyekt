@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route, Router } from 'react-router-dom'
 import ListLink from './components/Pages/listLink/ListLink'
 import Routers from './components/Router/Router'
 const App = () => {
-  const [list, setList] = useState([])
+  // const [list, setList] = useState([])
   return (
     <>
       <Routers/>
